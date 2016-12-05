@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :waiters
+
+  resources :tables
+
   resources :orderlines
 
   resources :orders
@@ -10,5 +14,5 @@ Rails.application.routes.draw do
 
   resources :foods
 
-  root 'customer#index'
+  root 'customers#index'
 end
